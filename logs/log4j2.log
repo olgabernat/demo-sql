@@ -1,0 +1,39 @@
+2023-11-01 19:44:22,512 INFO Utils [main] Perform queryDELETE FROM Users
+2023-11-01 19:44:22,524 INFO Connect [main] Adress to DateBase: jdbc:sqlite:C:\db\demo-db2.db
+2023-11-01 19:44:22,525 INFO Connect [main] Connect to DB
+2023-11-01 19:44:23,080 INFO Utils [main] Perform queryINSERT INTO Users (ID, Name, Password, IsAdmin)VALUES(?,?,?,?)
+2023-11-01 19:44:23,080 INFO Connect [main] Adress to DateBase: jdbc:sqlite:C:\db\demo-db2.db
+2023-11-01 19:44:23,080 INFO Connect [main] Connect to DB
+2023-11-01 19:44:23,099 INFO Utils [main] ID = 1	Name = Peter	Password = 1234	IsAdmin = 0
+2023-11-01 19:44:23,114 INFO Utils [main] Perform queryINSERT INTO Users (ID, Name, Password, IsAdmin)VALUES(?,?,?,?)
+2023-11-01 19:44:23,114 INFO Connect [main] Adress to DateBase: jdbc:sqlite:C:\db\demo-db2.db
+2023-11-01 19:44:23,115 INFO Connect [main] Connect to DB
+2023-11-01 19:44:23,117 INFO Utils [main] ID = 2	Name = Ivan	Password = 12345	IsAdmin = 1
+2023-11-01 19:44:23,129 INFO Utils [main] Perform queryINSERT INTO Users (ID, Name, Password, IsAdmin)VALUES(?,?,?,?)
+2023-11-01 19:44:23,129 INFO Connect [main] Adress to DateBase: jdbc:sqlite:C:\db\demo-db2.db
+2023-11-01 19:44:23,129 INFO Connect [main] Connect to DB
+2023-11-01 19:44:23,132 INFO Utils [main] ID = 3	Name = Dan	Password = 12347	IsAdmin = 0
+2023-11-01 19:44:23,145 INFO Utils [main] Perform queryINSERT INTO Users (ID, Name, Password, IsAdmin)VALUES(?,?,?,?)
+2023-11-01 19:44:23,145 INFO Connect [main] Adress to DateBase: jdbc:sqlite:C:\db\demo-db2.db
+2023-11-01 19:44:23,145 INFO Connect [main] Connect to DB
+2023-11-01 19:44:23,148 INFO Utils [main] ID = 4	Name = Sam	Password = 12349	IsAdmin = 0
+2023-11-01 19:44:23,158 INFO Utils [main] Perform queryINSERT INTO Users (ID, Name, Password, IsAdmin)VALUES(?,?,?,?)
+2023-11-01 19:44:23,159 INFO Connect [main] Adress to DateBase: jdbc:sqlite:C:\db\demo-db2.db
+2023-11-01 19:44:23,159 INFO Connect [main] Connect to DB
+2023-11-01 19:44:23,161 INFO Utils [main] ID = 5	Name = Fil	Password = 12342	IsAdmin = 0
+2023-11-01 19:44:23,176 INFO Utils [main] Perform querySELECT * From Users
+2023-11-01 19:44:23,176 INFO Connect [main] Adress to DateBase: jdbc:sqlite:C:\db\demo-db2.db
+2023-11-01 19:44:23,176 INFO Connect [main] Connect to DB
+2023-11-01 19:44:23,185 INFO Utils [main] 1	Peter	1234	0
+2023-11-01 19:44:23,186 INFO Utils [main] 2	Ivan	12345	1
+2023-11-01 19:44:23,186 INFO Utils [main] 3	Dan	12347	0
+2023-11-01 19:44:23,187 INFO Utils [main] 4	Sam	12349	0
+2023-11-01 19:44:23,187 INFO Utils [main] 5	Fil	12342	0
+2023-11-01 19:44:23,189 INFO Utils [main] Perform queryDELETE FROM Users WHERE id = ?
+2023-11-01 19:44:23,189 INFO Connect [main] Adress to DateBase: jdbc:sqlite:C:\db\demo-db2.db
+2023-11-01 19:44:23,190 INFO Connect [main] Connect to DB
+2023-11-01 19:44:23,192 INFO Utils [main] ID = 1
+2023-11-01 19:44:23,204 INFO Utils [main] Perform queryUPDATE Users SET mame = ? , password = ? WHERE id = ?
+2023-11-01 19:44:23,204 INFO Connect [main] Adress to DateBase: jdbc:sqlite:C:\db\demo-db2.db
+2023-11-01 19:44:23,205 INFO Connect [main] Connect to DB
+2023-11-01 19:44:23,213 ERROR Utils [main] Error of query org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: mame)
